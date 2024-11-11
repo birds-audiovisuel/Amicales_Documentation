@@ -6,6 +6,6 @@
 - [Python](./python.md)
 - [Maths](./maths.md)
 
-# Décembre 2023
+# Défis
 
-- [Défis](./challenge.md)
+- [Décembre 2023](./2023_challenge.md)
