@@ -1,13 +1,14 @@
 # Summary
 
 
-# Instalation RSK
+# Installation
 
 - [RSK](./install.md)
 
 # Cours
 
-- [Introduction](./introduction.md)
+<!-- - [Introduction](./introduction.md)-->
+
 - [Python](./python.md)
 - [Maths](./maths.md)
 
@@ -16,7 +17,9 @@
 - [Réseau](./https://projets.vlamynck.fr/Universit%C3%A9-de-Bordeaux/MD/Tuto_Config_Services_R%C3%A9seaux.md) 
 - [Réseau](./reseau.md) 
 -->
+
 # Défis
+
 <!--
 - [Décembre 2023](./2023_challenge.md)
 -->
