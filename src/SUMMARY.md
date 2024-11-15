@@ -2,7 +2,7 @@
 
 
 # Instal
-- [RSK]()
+- [RSK](./install.md)
 # Cours
 
 - [Introduction](./introduction.md)
