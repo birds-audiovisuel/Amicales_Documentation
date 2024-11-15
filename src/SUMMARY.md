@@ -1,14 +1,15 @@
 # Summary
 
 
-# Instal
+# Instalation RSK
+
 - [RSK](./install.md)
+
 # Cours
 
 - [Introduction](./introduction.md)
 - [Python](./python.md)
 - [Maths](./maths.md)
-
 
 # Tutoriels
 <!--
@@ -16,5 +17,6 @@
 - [Réseau](./reseau.md) 
 -->
 # Défis
-
+<!--
 - [Décembre 2023](./2023_challenge.md)
+-->

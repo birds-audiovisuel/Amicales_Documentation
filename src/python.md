@@ -21,7 +21,7 @@ print("Hello, World!")
 ## Caractéristiques Principales
 
 - Langage de haut niveau : Python est conçu pour être facile à lire et à écrire.
-- Gratuit : Python est un logiciel open source et gratuit.
+- Gratuit : Python est open source et gratuit.
 - Orienté objet : Python supporte la programmation orientée objet.
 - Polyvalent : Utilisé dans de nombreux domaines comme l'analyse de données, la bioinformatique, et la robotique
 
@@ -47,7 +47,7 @@ def saluer(nom):
 print(saluer("Alice"))
 ```
 
-## Ressource supplémentaires
+## Ressources supplémentaires
 
 - [Documentation Officielle](https://docs.python.org/3/)
 - [Tutoriels Python pour Débutants](https://www.learnpython.org/)
