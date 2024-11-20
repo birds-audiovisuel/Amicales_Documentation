@@ -65,4 +65,4 @@ Après avoir exécuté la commande, la page suivante devrait s'afficher :
 
 ![image.png](./assets/image.png)
 
-## Félicitations tu es prêt !
+## [Félicitations tu es prêt ! &rarr; ]( ./introduction.md)

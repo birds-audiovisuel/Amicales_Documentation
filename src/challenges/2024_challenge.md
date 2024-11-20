@@ -2,29 +2,37 @@
 
 <!-- ## 🟢 Défi facile -->
 
-### 🌐 Défi RSK 1 : Mission "Un monde de couleur" 🌐
+### 🌐 Défi RSK 1 : Mission "Au centre" 🌐
 
-Votre mission, si vous l'acceptez, est d'illuminer le monde digital avec une cascade de couleurs éblouissantes.
-Armé de votre expertise et du puissant client RSK, vous allez plonger dans un univers où la couleur est reine.
+Lors de votre match face à la redoutable équipe verte, vous avez calculé que la meilleure position pour marquer un but serait au centre du terrain.
 
-##### 🎨 Lumière Verte, Action !
+Votre mission sera donc d'amener le robot Bleu 1 vers le centre du terrain afin qu'il puisse marquer ⚽⚽ !
+#### 🎯 Cours Forest ! Cours !
 
-Une fois connecté, votre objectif est d’allumer les LEDS en vert éclatant.
-Utilisez la combinaison de couleurs suivante pour créer un vert pur :
+Une fois connecté, votre objectif est d'amener votre robot 1 vers le centre du terrain aux coordonnées `x = 0` et `y = 0`.
 
-- Rouge (R) : 0
-- Vert (G) : 255
-- Bleu (B) : 0
+Pour cela, vous utiliserez la redoutable commande Go To, qui ordonne à un robot d'aller à une position `(x, y)` avec une orientation `theta`.
+
+```python
+client.<couleur><numeros>.goto((x,y,theta), wait=False)
+```
 
 Votre code ressemblera à ceci :
-
 ```python
 import rsk
 
-with rsk.Client() as client:
+with rsk.Client() as client: 
     while True:
-        client.blue1.leds(0, 255, 0)
+        client.blue1.goto((0,0,0), wait=False)
 ```
+
+💡 Astuce 💡 : Vous pouvez aussi récupérer votre robot grâce à la commande robots, ce qui permet d'avoir un code plus facilement maintenable :
+
+```python
+myRobot = client.robots['<couleur>'][<numeros>]
+```
+
+
 
 ##### 🌈 Déchaînez votre Créativité :
 
