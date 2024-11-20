@@ -33,13 +33,6 @@ myRobot = client.robots['<couleur>'][<numeros>]
 ```
 
 
-
-##### 🌈 Déchaînez votre Créativité :
-
-N’hésitez pas à expérimenter avec différentes couleurs et intensités pour créer des effets visuels étonnants.
-
-Bonne chance dans ce défi coloré, et que les meilleures couleurs gagnent!
-
 ### 🌐 Défi RSK 2 : Mission "Surveillance des Coordonnées" 🌐
 
 Votre mission est de surveiller et d'afficher les coordonnées des agents sur le terrain : nos fidèles robots, codés "Bleu 1", "Bleu 2", "Vert 1" et "Vert 2".
