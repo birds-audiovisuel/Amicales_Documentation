@@ -26,49 +26,46 @@ with rsk.Client() as client:
         client.blue1.goto((0,0,0), wait=False)
 ```
 
-💡 Astuce 💡 : Vous pouvez aussi récupérer votre robot grâce à la commande robots, ce qui permet d'avoir un code plus facilement maintenable :
+#### 💡 Astuce 💡 :
+ Vous pouvez aussi récupérer votre robot grâce à la commande robots, ce qui permet d'avoir un code plus facilement maintenable :
 
 ```python
 myRobot = client.robots['<couleur>'][<numeros>]
 ```
 
 
-### 🌐 Défi RSK 2 : Mission "Surveillance des Coordonnées" 🌐
+### 🌐 Défi RSK 2 : Mission "À l'œil" 🌐
 
-Votre mission est de surveiller et d'afficher les coordonnées des agents sur le terrain : nos fidèles robots, codés "Bleu 1", "Bleu 2", "Vert 1" et "Vert 2".
-Chaque robot a sa propre trajectoire et position dans l'espace, et il est crucial de les suivre avec précision.
+Votre match contre l'équipe verte est difficile, et il est nécessaire de vérifier les positions de vos ennemis pour adapter votre stratégie ! Votre mission : capturer un maximum d'informations afin de vaincre la redoutable équipe verte.
 
-##### 🎯 Surveillance de la Cible - La Balle :
+##### 🎯 Surveillance Maximal :
 
-En plus de suivre nos agents robots, une cible mobile - une balle - est en jeu. Votre mission inclut également de traquer et d'afficher en continu les coordonnées de cette balle.
+Lors de cette mission, vous devrez récupérer toutes les informations dynamiques sur le terrain, ce qui inclut les coordonnées des 4 robots ainsi que celles de la balle, et les afficher.
 
 ##### 🧩 Défi Technique :
 
-Votre code devra récupérer et afficher les positions X, Y de chaque robot et de la balle. Cela nécessite une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel.
+Votre code devra récupérer et afficher les positions `X`, `Y` de chaque robot et de la balle. Cela nécessitera une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel. Il est conseillé de consulter la documentation de RSK pour compléter ce défi  ([Cliquez ici)]('https://robot-soccer-kit.github.io/programming#localization-informations'))
 
 ##### 👁‍🗨 Visualisation des Données :
 
-Assurez-vous que les données soient présentées de manière claire et précise. Une bonne visualisation est la clé pour comprendre le champ de bataille numérique.
+Assurez-vous que les données soient présentées de manière claire et précise. Une bonne visualisation est essentielle pour comprendre le champ de bataille numérique.
 
-### 🌐 Défi RSK 3 : Mission "Navigation Stratégique" 🌐
+Si vous êtes bloqué, voici un petit indice : [indice]('https://www.docstring.fr/glossaire/print/')
 
-Après avoir maîtrisé l'art de l'illumination et de la surveillance, il est temps de passer à la navigation et à la stratégie.
-Dans ce défi, vous allez diriger un robot dans une danse délicate de positionnement et de mouvement.
+### 🌐 Défi RSK 3 : Mission "Mimétisme" 🌐
+
+Lors de votre affrontement avec l'équipe verte, celle-ci utilise une technique mystérieuse qui désoriente vos robots ! Mais vous avez la solution : toujours regarder dans la même direction que votre ennemi !
 
 ##### 🌐 Votre Mission :
 
-Au lieu de tourner autour d'une cible, votre tâche est de guider le robot vers des points cardinaux spécifiques autour de la balle. Pensez à cela comme un jeu de positionnement stratégique : Nord, Sud, Est, Ouest.
+Réutilisez et adaptez ce que vous avez réalisé lors de vos deux précédentes missions afin de
+Récupérer l'orientation du robot Vert 1 puis
+donner à votre robot Bleu 1 la même orientation.
 
-##### 🤖 Manœuvres du Robot :
+#### 🎯 Mime Mime Mime !
 
-Vous contrôlerez le robot "Bleu 1" pour le déplacer vers des points prédéterminés autour de la balle, en utilisant des coordonnées relatives. Votre agilité en programmation et votre sens de la précision seront essentiels ici.
-
-##### 📍 Instructions de Navigation :
-
-1. Déplacez le robot de 0.25 mètres à l'ouest de la balle.
-2. Ensuite, dirigez-le 0.25 mètres au nord de la balle.
-3. Poursuivez en le déplaçant de 0.25 mètres à l'est.
-4. Enfin, amenez-le 0.25 mètres au sud de la position initiale.
+1 - Récupérez l'orientation `theta` du robot Vert 1 à l’aide des informations disponibles sur le terrain.
+2 - Donnez l’ordre à votre robot Bleu 1 d’adopter la même orientation.
 
 ### 🌐 Défi RSK 4 : Mission "Rotation Maîtrisée" 🌐
 
