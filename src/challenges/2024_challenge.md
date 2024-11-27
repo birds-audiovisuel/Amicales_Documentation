@@ -1,8 +1,6 @@
 # Défis
 
-<!-- ## 🟢 Défi facile -->
-
-### 🌐 Défi RSK 1 : Mission "Au centre" 🌐
+### 🌐 Défi RSK 1 : Mission "Au centre" ⭐★★★★ 🌐
 
 Lors de votre match face à la redoutable équipe verte, vous avez calculé que la meilleure position pour marquer un but serait au centre du terrain.
 
@@ -34,7 +32,7 @@ myRobot = client.robots['<couleur>'][<numeros>]
 ```
 
 
-### 🌐 Défi RSK 2 : Mission "À l'œil" 🌐
+### 🌐 Défi RSK 2 : Mission "À l'œil" ⭐⭐★★★ 🌐
 
 Votre match contre l'équipe verte est difficile, et il est nécessaire de vérifier les positions de vos ennemis pour adapter votre stratégie ! Votre mission : capturer un maximum d'informations afin de vaincre la redoutable équipe verte.
 
@@ -52,7 +50,7 @@ Assurez-vous que les données soient présentées de manière claire et précise
 
 Si vous êtes bloqué, voici un petit indice : [indice]('https://www.docstring.fr/glossaire/print/')
 
-### 🌐 Défi RSK 3 : Mission "Mimétisme" 🌐
+### 🌐 Défi RSK 3 : Mission "Mimétisme"⭐⭐★★★  🌐
 
 Lors de votre affrontement avec l'équipe verte, celle-ci utilise une technique mystérieuse qui désoriente vos robots ! Mais vous avez la solution : toujours regarder dans la même direction que votre ennemi !
 
@@ -67,17 +65,36 @@ donner à votre robot Bleu 1 la même orientation.
 1 - Récupérez l'orientation `theta` du robot Vert 1 à l’aide des informations disponibles sur le terrain.
 2 - Donnez l’ordre à votre robot Bleu 1 d’adopter la même orientation.
 
-### 🌐 Défi RSK 4 : Mission "Rotation Maîtrisée" 🌐
+### 🌐 Défi RSK 4 : Mission "Adaptation Défensive !" ⭐⭐⭐★★ 🌐
 
-Votre quatrième mission dans l'arène numérique est une danse de précision et d'agilité. Dans ce nouveau défi, vous allez orchestrer une rotation élégante de votre robot, en mettant à l'épreuve votre maîtrise des commandes de mouvement.
+L'attaquant de l'équipe verte ne cesse de marquer des buts. Pour l'arrêter, vous avez imaginé une méthode simple : placer votre deuxième robot en gardien de but.
 
 ##### 🔄 Votre Mission :
 
-Vous devez faire exécuter à votre robot une rotation complète sur lui-même. Cette manœuvre requiert un contrôle minutieux et une compréhension approfondie des commandes de votre robot.
+Vous devrez utiliser la position en `y` de la balle pour contrer les tirs de l'équipe verte.
+Utilisez également les constantes fournies par la bibliothèque RSK afin de positionner votre gardien avec une précision optimale.
 
-##### 🚨 Attention - Changement de Commande :
+Voici un exemple pour récupérer les constantes :
+```python
+import rsk
+from rsk import constants
 
-Pour ce défi, oubliez la commande goto habituelle. Vous allez plutôt utiliser la commande control pour diriger le robot. Cette approche vous donne un contrôle plus direct et précis sur les mouvements du robot, essentiel pour réussir une rotation parfaite.
+position_but = constants.defense_area_width # Correspond à la position en x des cages du côté positif du terrain
+```
+
+##### 🧠 Curiosité 500% :
+
+N'hésitez pas à explorer la bibliothèque RSK pour découvrir tout ce qu'elle contient !
+Pourquoi ne pas commencer par examiner les différentes constantes disponibles ?
+- Astuce 1 : Tapez `constants.` et observez les propositions qui vous sont faites.
+- Astuce 2 : Pour une exploration plus poussée, appuyez sur `CTRL + clic` sur le mot `constants`. Vous accéderez directement aux fichiers de la bibliothèque 🤯.
+
+Attention : Ne modifiez rien dans ces fichiers 🤭.
+
+#### 👀 TOUJOURS PLUS ! (Sous-défi facultatif - ⭐⭐⭐⭐⭐)  :
+
+Pour un défi supplémentaire, essayez de programmer votre défenseur pour qu'il se base sur l'orientation du robot Vert 1 plutôt que sur la position de la balle.
+Ce défi est optionnel, mais il nécessitera des notions avancées en trigonométrie.
 
 ### 🌐 Défi RSK 5 : Mission "Coup de Maître" 🌐
 
@@ -124,7 +141,3 @@ Organiser un match impliquant deux équipes de robots. Chaque équipe doit essay
 - Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, passer à leurs coéquipiers, et tirer au but.
 - Implémentez des stratégies défensives pour que les robots puissent bloquer les tentatives de but de l'équipe adverse.
 - Assurez une bonne communication et coordination entre les robots de la même équipe.
-
-<!-- ## Défi normale -->
-
-<!-- ## Défi difficile -->
