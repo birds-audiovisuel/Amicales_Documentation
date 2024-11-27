@@ -194,3 +194,9 @@ Organiser un match impliquant deux équipes de robots. Chaque équipe doit essay
 - Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, et tirer au but.
 - Implémentez des stratégies défensives pour que les robots puissent bloquer les tentatives de but de l'équipe adverse.
 - Assurez une bonne communication et coordination entre les robots de la même équipe.
+
+### 🌐 Les Défi RSK Continuent ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ ! 🌐
+Maintenant que votre match est passé, corrigez ce qui ne fonctionne pas, améliorez ce qui marche bien et inventez de nouvelles stratégies de jeu pour surprendre vos adversaires !
+
+C’est le moment de peaufiner votre programme et d’explorer de nouvelles idées pour être encore plus performant. Gardez à l'esprit que l'innovation et l'adaptabilité sont les clés du succès ! 🚀
+
