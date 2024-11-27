@@ -42,13 +42,13 @@ Lors de cette mission, vous devrez récupérer toutes les informations dynamique
 
 ##### 🧩 Défi Technique :
 
-Votre code devra récupérer et afficher les positions `X`, `Y` de chaque robot et de la balle. Cela nécessitera une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel. Il est conseillé de consulter la documentation de RSK pour compléter ce défi  ([Cliquez ici)]('https://robot-soccer-kit.github.io/programming#localization-informations'))
+Votre code devra récupérer et afficher les positions `X`, `Y` de chaque robot et de la balle. Cela nécessitera une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel. Il est conseillé de consulter la documentation de RSK pour compléter ce défi  ([Cliquez ici)](https://robot-soccer-kit.github.io/programming#localization-informations))
 
 ##### 👁‍🗨 Visualisation des Données :
 
 Assurez-vous que les données soient présentées de manière claire et précise. Une bonne visualisation est essentielle pour comprendre le champ de bataille numérique.
 
-Si vous êtes bloqué, voici un petit indice : [indice]('https://www.docstring.fr/glossaire/print/')
+Si vous êtes bloqué, voici un petit indice : [indice](https://www.docstring.fr/glossaire/print/)
 
 ### 🌐 Défi RSK 3 : Mission "Mimétisme"⭐⭐★★★  🌐
 
@@ -140,26 +140,50 @@ Si vous ne savez pas par où commencer, essayez de voir comment positionner votr
 Il se pourrait que vous ayez besoin de multiplier certaines valeurs par **-1** 😉.
 
 
-### 🌐 Défi RSK 6 : Mission "Passe Parfaite" 🌐
+### 🌐 Défi RSK 6 : Mission " Des placements " ⭐⭐⭐⭐★ 🌐
 
-Votre sixième mission consiste à exécuter une passe précise entre deux robots. Ce défi nécessite une compréhension approfondie de la dynamique des mouvements et une synchronisation impeccable entre les deux robots.
+Maintenant qu'une muraille protège votre camp, il est temps de passer à l’attaque contre l’équipe verte !
+
+Votre robot 1 est prêt à en découdre et à marquer des BUTS ⚽⚽⚽ !
+
 
 ##### ⚽ Votre Mission :
 
-Un robot doit envoyer la balle à un autre robot situé à une certaine distance. La clé est d'ajuster la force et l'angle de la passe pour assurer une réception réussie par le robot destinataire.
+Votre objectif sera de positionner votre robot derrière la balle, à une distance optimale pour tirer sans la pousser immédiatement puis de tirer. Pour cela, vous devrez prendre en compte trois paramètres :
 
-### 🌐 Défi RSK 7 : Mission "Orbite Circulaire" 🌐
+- Le rayon du robot.
+- Le rayon de la balle.
+- Une marge d’imprécision arbitraire sur la distance entre le robot et la balle. Vous devrez effectuer plusieurs essais jusqu’à ce que le robot reste bien positionné derrière la balle sans bouger inutilement.
 
-Votre septième défi est de faire naviguer un robot autour d'une balle, en suivant la trajectoire d'un cercle parfait. Ce défi sollicitera vos compétences en géométrie et en programmation pour réaliser une orbite circulaire précise.
+⚠️ Points importants :
 
-##### 🔵 Votre Mission :
+- Si vous vous placez trop loin, vous risquez de perdre en puissance de frappe.
+- Effectuez un maximum de tests pour trouver la distance optimale !
 
-Faire tourner le robot autour de la balle en maintenant une distance constante, comme s'il suivait l'orbite d'un satellite.
-La trajectoire doit ressembler à un cercle parfait autour de la balle.
+Pour simplifier cet objectif, placez la balle au centre du terrain et positionnez votre robot à mi-distance entre vos cages et la balle. Cela vous permettra de travailler dans des conditions simples et prévisibles.
 
-### 🏆 Défi RSK Final : Mission "Match Ultime" 🏆
+Maintenant que vous etes bien positionné, 💥💥 TRIEZ 💥💥 !
 
-Votre mission finale est de mettre en œuvre tout ce que vous avez appris pour orchestrer un match de robot. Ce défi combine stratégie, précision, coordination d'équipe, et adaptation en temps réel. Vous devrez faire preuve de créativité, de logique de programmation avancée et de compréhension tactique du jeu.
+### 🌐 Défi RSK 7 : Mission " Panne d'énergie ! " ⭐⭐⭐⭐⭐ 🌐
+
+Suite à votre précédente mission, vous avez sûrement remarqué que la balle ne va pas très loin lorsque vous utilisez la commande `kick` du robot.
+
+
+##### ⚽ Votre Mission :
+
+Utilisez un timer pour éviter le déchargement trop régulier du condensateur. En effet, le kickeur met un certain temps à se charger à 100 %, et il est important de s’assurer qu’il soit complètement chargé avant de tirer. Sinon, vous risquez de simplement donner la balle à vos ennemis !
+
+Utilisez donc un timer pour vous assurer que le kickeur soit prêt avant chaque tir, afin d’optimiser la puissance et la précision de vos frappes.
+
+#### 💡 Indice 
+Allez consulter la documentation de [time](https://www.programiz.com/python-programming/time) !
+
+
+### 🏆 Défi RSK Final : Mission "Match Ultime" ⭐⭐⭐⭐⭐ 🏆
+
+Combinez tout ce que vous avez appris, et plus encore, pour créer un programme imparable. Que toutes les équipes vertes tremblent rien qu'en entendant votre nom ! 😈
+
+C’est l’occasion de mettre en pratique toutes vos compétences et de créer une stratégie gagnante. Allez, faites briller votre robot et montrez à l’équipe verte qui est le vrai champion ! 💪⚽
 
 ##### ⚽ Votre Mission :
 
@@ -167,6 +191,6 @@ Organiser un match impliquant deux équipes de robots. Chaque équipe doit essay
 
 ##### 🤖 Stratégie et Exécution :
 
-- Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, passer à leurs coéquipiers, et tirer au but.
+- Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, et tirer au but.
 - Implémentez des stratégies défensives pour que les robots puissent bloquer les tentatives de but de l'équipe adverse.
 - Assurez une bonne communication et coordination entre les robots de la même équipe.

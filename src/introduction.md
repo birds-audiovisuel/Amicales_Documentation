@@ -8,3 +8,5 @@ N’hésite pas à nous appeler si tu as du mal à comprendre une consigne ou si
 
 Les défis peuvent également être réalisés chez toi. Si c’est le cas, tu peux nous contacter sur [Discord](https://discord.gg/Fjm7NGgjXu) ou par [email](mailto:clement.labbe33@gmail.com) à clement.labbe33@gmail.com
 
+## [Félicitations tu es prêt ! &rarr; ]( ./introduction.md)
+
