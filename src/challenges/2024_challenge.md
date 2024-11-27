@@ -96,20 +96,49 @@ Attention : Ne modifiez rien dans ces fichiers 🤭.
 Pour un défi supplémentaire, essayez de programmer votre défenseur pour qu'il se base sur l'orientation du robot Vert 1 plutôt que sur la position de la balle.
 Ce défi est optionnel, mais il nécessitera des notions avancées en trigonométrie.
 
-### 🌐 Défi RSK 5 : Mission "Coup de Maître" 🌐
+### 🌐 Défi RSK 5 : Mission "Side Swap" ⭐⭐⭐★★ 🌐
 
-Votre cinquième mission dans cette aventure technologique consiste à manœuvrer votre robot de manière à frapper une balle placée au centre.
-Ce défi mettra à l'épreuve votre habileté à évaluer les distances et à contrôler le mouvement de votre robot.
+La mi-temps du match contre l'équipe verte approche. Comme vous le savez, les côtés du terrain sont échangés entre les mi-temps, mais vous n’avez pas encore pris cela en compte dans votre code.
+
+Vous devez rapidement mettre en place une solution permettant de modifier facilement ce paramètre pour adapter votre stratégie !
 
 ##### ⚽ Votre Mission :
 
-Le but est de positionner et de faire avancer le robot pour qu'il frappe la balle située au centre.
-Cela nécessitera une compréhension fine de la dynamique et de la force nécessaire pour un impact efficace.
+Votre mission sera de distinguer le côté **positif** et **négatif** du terrain afin de pouvoir vous adapter à toutes les circonstances et éviter d'attaquer dans votre propre camp !
 
-##### 📐 Position de Départ :
+Pour cela, vous pouvez utiliser la fonction `input` de Python, qui permet de saisir des valeurs à la main pendant l’exécution de votre programme.
 
-Le robot commence sa mission depuis une position sur l'axe des x positifs (à une distance x quelconque du centre).
-Votre tâche est de le guider depuis cette position initiale jusqu'à la balle.
+
+Voici comment utiliser `input` :
+```python
+réponse = input('Que voulez vous faire ?')
+```
+
+Voici le résultat dans votre terminal
+```bash
+Que voulez vous faire ?
+>| 
+```
+Ici, le programme attend une réponse de l’utilisateur, qui sera ensuite stockée dans la variable `réponse`.
+
+#### ⚠️ ATTENTION ⚠️ :
+La réponse fournie par l’utilisateur est sous forme de chaîne de caractères. Ainsi, si vous entrez un nombre, le programme le considérera comme une chaîne :
+``` python
+réponse = '1'
+```
+Pour résoudre ce problème, vous pouvez convertir la chaîne en nombre à l’aide des fonctions `int` ou `float` :
+
+``` python
+réponseEntiere = int('1')
+réponseFlottante = float('3.14') 
+```
+
+#### 💡 Indice
+
+Si vous ne savez pas par où commencer, essayez de voir comment positionner votre robot défensif du défi précédent dans les buts opposés.
+
+Il se pourrait que vous ayez besoin de multiplier certaines valeurs par **-1** 😉.
+
 
 ### 🌐 Défi RSK 6 : Mission "Passe Parfaite" 🌐
 
