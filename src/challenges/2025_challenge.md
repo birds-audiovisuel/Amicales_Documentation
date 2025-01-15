@@ -107,8 +107,41 @@ except rsk.client.ClientError as e:
 
 Vous pouvez aussi gerer chacune des erreur afin de pouvoir continuer a bouger malgré la perte d'information par exemple vous pouvez definir d'une autre maniere les données perdu !
 
+### 🌐 Défi RSK 6 : Mission "Sur mesure" ⭐⭐⭐⭐★ 🌐
 
-### 🌐 Défi RSK 6 : Mission "Carton jaune" ⭐⭐⭐⭐★ 🌐
+Maintenant que vos robots sont prêts à attaquer, il est temps de leur apprendre l'art du positionnement précis pour devenir des attaquants redoutables ! Votre mission : placer votre robot juste derrière la balle sans la toucher, afin de pouvoir effectuer un tir parfait.
+
+#### 🎯 Derrière mais prêt à frapper !
+
+Votre objectif est de positionner votre robot à une distance optimale de la balle, prenant en compte les dimensions suivantes :
+
+Le rayon du robot (`robot_radius`),
+Le rayon de la balle (`ball_radius`),
+Une marge d’imprécision arbitraire que vous devrez mesurer par des tests en situation réelle.
+
+La distance idéale correspondra à la somme des rayons plus cette marge d’imprécision. 
+
+#### 🔄 Votre Mission :
+
+Mesurez la marge d’imprécision en effectuant plusieurs essais avec votre robot derrière la balle.
+Placez votre robot derrière la balle, en vous basant sur les constantes `robot_radius` et `ball_radius`, ainsi que sur la marge calculée.
+Vérifiez que votre robot est bien positionné sans toucher la balle, si tel est le cas essayé de le faire kick et voyez le résultat !
+
+#### 💡 Astuce :
+
+Utilisez les constantes de la bibliothèque RSK pour simplifier votre code. Ces constantes sont disponibles dans le module rsk.constants
+
+Voici un exemple d'utilisation :
+```python
+import rsk
+from rsk import constants
+
+rayon_du_robot = constants.robot_radius
+```
+Pour une exploration rapide des constantes, tapez constants. et observez les suggestions.
+Si vous êtes curieux, appuyez sur CTRL + clic sur le mot constants pour accéder directement au code source. Attention : Ne modifiez rien dans ces fichiers 🤭.
+
+### 🌐 Défi RSK 7 : Mission "Carton jaune" ⭐⭐⭐⭐⭐ 🌐
 
 Maintenant que votre robot suit la balle vous vous rendez compte durant votre match qu'il ne peux pas rester a coté d'elle durant trop de temps sous penne de se prendre une pénalité ! mais on peux faire de cette penalité aussi un avantage !
 
@@ -117,7 +150,7 @@ Maintenant que votre robot suit la balle vous vous rendez compte durant votre ma
 Votre mission sera de detecter lorsque un robot est pénaliser, de cette maniere vous pourrez lorsque les deux robot attaquant sont pénaliser faire monter votre defenseur pour qu'il attaque ! 
 Pour cela vous avez acces aux information du `referee` [referee](https://robot-soccer-kit.github.io/referee#access-to-referee-information-) 
 
-#### 🎯 A l'ataque !
+#### 🎯 A l'attaque !
 
 1 - Récupérez les information de l'arbitre 
 2 - Vérifiez que les deux robot vert 1 et bleu 1 sont penalisés 
@@ -131,6 +164,30 @@ with rsk.Client() as client:
     while True:
         client.referee["game_is_running"] #Cette ligne renvoie True si la partie est débuté False sinon
 ```
+
+### 🌐 Défi RSK 8 : Mission "visée a toute epreuve !" ⭐⭐⭐⭐⭐ 🌐
+
+Lors de vos péripécie il vous vien a l'idée de cree un outils vous permettant de faire en sorte que l'un de vos robot regarde un point donné
+
+##### 🔄 Votre Mission :
+
+Votre mission sera de réaliser une fonction python prenant 2 points en entrée en renvoyant un angle delta en sortie 
+Voici un exemple de fonction réalisant une addition : 
+
+```python
+def addition(a,b): # Ici a et b sont les entrés
+    c = a+b # ici on réalise l'addition de a + b
+    return c # et ici on renvoie en sortie le résultat c
+
+résultat = addition(2,3) # ainsi cette ligne réalisera l'addition de 2+3
+print(résultat) # le print affichera alors 5
+```
+
+Afin de réaliser le calcule permettant que votre robot regarde un point il vous faudra faire de la trigonométrie !
+
+#### 💡 Indice 💡 :
+
+Renseignez vous sur la fonction arc tangente 2 ou atan2. En python vous pourrez utiliser `math.atan2` sous reserve de `import math`.
 
 ### 🏆 Défi RSK Final : Mission "Match Ultime" ⭐⭐⭐⭐⭐ 🏆
 
