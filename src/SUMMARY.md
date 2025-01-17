@@ -18,6 +18,7 @@
 - [Réseau](./https://projets.vlamynck.fr/Universit%C3%A9-de-Bordeaux/MD/Tuto_Config_Services_R%C3%A9seaux.md) 
 - [Réseau](./reseau.md) 
 -->
+[Humanoïds 2024](.https://humanoids-2024.les-amicales.fr/)
 
 # Défis
 - [Décembre 2023](./challenges/2023_challenge.md)
