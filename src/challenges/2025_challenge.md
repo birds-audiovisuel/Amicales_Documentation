@@ -57,7 +57,7 @@ Lors de cette mission, vous devrez récupérer toutes les informations dynamique
 
 ##### 🧩 Défi Technique :
 
-Votre code devra récupérer et afficher les positions `X`, `Y` de chaque robot et de la balle. Cela nécessitera une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel. Il est conseillé de consulter la documentation de RSK pour compléter ce défi  ([Cliquez ici)](https://robot-soccer-kit.github.io/programming#localization-informations))
+Votre code devra récupérer et afficher les positions `X`, `Y` de chacun des robots et de la balle. Cela nécessitera une attention méticuleuse aux données et une capacité à interpréter les informations en temps réel. Il est conseillé de consulter la documentation de RSK pour compléter ce défi  ([Cliquez ici)](https://robot-soccer-kit.github.io/programming#localization-informations))
 
 ##### 👁‍🗨 Visualisation des Données :
 
@@ -67,7 +67,7 @@ Si vous êtes bloqué, voici un petit indice : [indice](https://www.docstring.fr
 
 ### 🌐 Défi RSK 4 : Mission "Défense offensive !"⭐⭐★★★  🌐
 
-Vous avez reperer que votre enemie vert s'appretais a tirer dans vos cage ! Votre meilleur façon d'empecher se tire est de foncer le plus vite possible vers la balle !
+Vous avez repérer que votre ennemi vert s'apprêtait a tirr dans vos cages ! Votre meilleur façon d'empêcher se tir est de foncer le plus vite possible vers la balle !
 
 ##### 🔄 Votre Mission :
 
@@ -82,15 +82,15 @@ donner à votre robot Bleu 1 la même position
 
 ### 🌐 Défi RSK 5 : Mission "Retour à la réalité"⭐⭐⭐★★  🌐
 
-Pour l'instant vous vous etes concentré a réaliser vos testes dans le simulateur, ne serais t-il pas tant de tester en réalité ! 
+Pour l'instant vous vous etes concentré a réaliser vos tests dans le simulateur, ne serait-il pas tant de tester en réalité ! 
 
 ##### 🔄 Votre Mission :
-Votre mission consistera en l'utilisation du game controlleur en l'apprentissage de la connexion avec celui-ci afin de faire bouger les robot en vrai !
+Votre mission consistera en l'utilisation du game controlleur en l'apprentissage de la connexion avec celui-ci afin de faire bouger les robots en vrai !
 Votre seconde mission sera de voir ce qu'il se passe lorsque l'un des robot n'est pas sur le terrain 
 
 💥 😱 COMMENT ÇA, VOTRE PROGRAMME CRASH ?!
 
-cela veux dire que vous n'avez pas gerer les erreurs !
+cela veut dire que vous n'avez pas gérer les erreurs !
 le fait que l'un des robot ou meme la balle sorte du terrain vous enleve une donnée a votre programme ! 
 pour le corriger il suffi de faire un test si il manque une valeur votre programme fera quelque chose d'autre en conséquences
 
@@ -105,7 +105,7 @@ except rsk.client.ClientError as e:
 
 #### 💡 Astuce 💡 :
 
-Vous pouvez aussi gerer chacune des erreur afin de pouvoir continuer a bouger malgré la perte d'information par exemple vous pouvez definir d'une autre maniere les données perdu !
+Vous pouvez aussi gérer chacune des erreurs afin de pouvoir continuer a bouger malgré la perte d'information par exemple vous pouvez definir d'une autre maniere les données perdu !
 
 ### 🌐 Défi RSK 6 : Mission "Sur mesure" ⭐⭐⭐⭐★ 🌐
 
@@ -125,7 +125,7 @@ La distance idéale correspondra à la somme des rayons plus cette marge d’imp
 
 Mesurez la marge d’imprécision en effectuant plusieurs essais avec votre robot derrière la balle.
 Placez votre robot derrière la balle, en vous basant sur les constantes `robot_radius` et `ball_radius`, ainsi que sur la marge calculée.
-Vérifiez que votre robot est bien positionné sans toucher la balle, si tel est le cas essayé de le faire kick et voyez le résultat !
+Vérifiez que votre robot est bien positionné sans toucher la balle, si tel est le cas essayé de le faire un tir et voyez le résultat !
 
 #### 💡 Astuce :
 
@@ -143,7 +143,7 @@ Si vous êtes curieux, appuyez sur CTRL + clic sur le mot constants pour accéde
 
 ### 🌐 Défi RSK 7 : Mission "Carton jaune" ⭐⭐⭐⭐⭐ 🌐
 
-Maintenant que votre robot suit la balle vous vous rendez compte durant votre match qu'il ne peux pas rester a coté d'elle durant trop de temps sous penne de se prendre une pénalité ! mais on peux faire de cette penalité aussi un avantage !
+Maintenant que votre robot suit la balle vous vous rendez compte durant votre match qu'il ne peux pas rester a coté d'elle durant trop de temps sous peine de se prendre une pénalité ! mais on peux faire de cette penalité aussi un avantage !
 
 ##### 🔄 Votre Mission :
 
@@ -167,7 +167,7 @@ with rsk.Client() as client:
 
 ### 🌐 Défi RSK 8 : Mission "visée a toute epreuve !" ⭐⭐⭐⭐⭐ 🌐
 
-Lors de vos péripécie il vous vien a l'idée de cree un outils vous permettant de faire en sorte que l'un de vos robot regarde un point donné
+Lors de vos péripécie il vous vient a l'idée de cree un outils vous permettant de faire en sorte que l'un de vos robot regarde un point donné
 
 ##### 🔄 Votre Mission :
 
@@ -183,11 +183,11 @@ résultat = addition(2,3) # ainsi cette ligne réalisera l'addition de 2+3
 print(résultat) # le print affichera alors 5
 ```
 
-Afin de réaliser le calcule permettant que votre robot regarde un point il vous faudra faire de la trigonométrie !
+Afin de réaliser le calcul permettant à votre robot regarde un point il vous faudra faire de la trigonométrie !
 
 #### 💡 Indice 💡 :
 
-Renseignez vous sur la fonction arc tangente 2 ou atan2. En python vous pourrez utiliser `math.atan2` sous reserve de `import math`.
+Renseignez-vous sur la fonction arc tangente 2 ou atan2. En python vous pourrez utiliser `math.atan2` sous reserve de `import math`.
 
 ### 🏆 Défi RSK Final : Mission "Match Ultime" ⭐⭐⭐⭐⭐ 🏆
 
@@ -201,7 +201,7 @@ Organiser un match impliquant deux équipes de robots. Chaque équipe doit essay
 
 ##### 🤖 Stratégie et Exécution :
 
-- Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, et tirer au but.
+- Programmez les robots pour qu'ils puissent se déplacer sur le terrain, contrôler la balle, et tirr au but.
 - Implémentez des stratégies défensives pour que les robots puissent bloquer les tentatives de but de l'équipe adverse.
 - Assurez une bonne communication et coordination entre les robots de la même équipe.
 
