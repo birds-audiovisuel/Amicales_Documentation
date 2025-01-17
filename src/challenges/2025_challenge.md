@@ -111,7 +111,7 @@ Vous pouvez aussi gérer chacune des erreurs afin de pouvoir continuer a bouger 
 
 Maintenant que vos robots sont prêts à attaquer, il est temps de leur apprendre l'art du positionnement précis pour devenir des attaquants redoutables ! Votre mission : placer votre robot juste derrière la balle sans la toucher, afin de pouvoir effectuer un tir parfait.
 
-#### 🎯 Derrière mais prêt à frapper !
+#### 🎯 Derrière mais prêt à frapper !
 
 Votre objectif est de positionner votre robot à une distance optimale de la balle, prenant en compte les dimensions suivantes :
 
@@ -127,7 +127,7 @@ Mesurez la marge d’imprécision en effectuant plusieurs essais avec votre robo
 Placez votre robot derrière la balle, en vous basant sur les constantes `robot_radius` et `ball_radius`, ainsi que sur la marge calculée.
 Vérifiez que votre robot est bien positionné sans toucher la balle, si tel est le cas essayé de le faire un tir et voyez le résultat !
 
-#### 💡 Astuce :
+#### 💡 Astuce :
 
 Utilisez les constantes de la bibliothèque RSK pour simplifier votre code. Ces constantes sont disponibles dans le module rsk.constants
 
@@ -185,7 +185,7 @@ print(résultat) # le print affichera alors 5
 
 Afin de réaliser le calcul permettant à votre robot regarde un point il vous faudra faire de la trigonométrie !
 
-#### 💡 Indice 💡 :
+#### 💡 Indice 💡 :
 
 Renseignez-vous sur la fonction arc tangente 2 ou atan2. En python vous pourrez utiliser `math.atan2` sous reserve de `import math`.
 
