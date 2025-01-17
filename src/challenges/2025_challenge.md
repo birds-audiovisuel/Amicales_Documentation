@@ -44,7 +44,7 @@ Tandis que l'un couvre la première partie du terrain avec `x>0`, l'autre se cha
 Pour cela, vous pouvez réutiliser le programme précédemment écrit afin de positionner le robot bleu 1 en `(1,0)` et le robot bleu 2 en `(−1,0)`.
 Veillez également à ce que les deux robots regardent dans des directions opposées.
 
-#### 💡 Indice 💡 :
+#### 💡 Indices 💡 :
 Vous pouvez donner des instructions à deux robots en même temps dans le même programme !
 
 Si vous n’arrivez pas à faire en sorte que les deux robots regardent dans des directions opposées, pensez que l’orientation des robots est exprimée en radians !
