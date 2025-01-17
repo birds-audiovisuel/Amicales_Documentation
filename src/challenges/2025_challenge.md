@@ -10,6 +10,8 @@ Une fois connecté, votre objectif est d'amener votre robot 1 vers le centre du 
 
 Pour cela, vous utiliserez la redoutable commande Go To, qui ordonne à un robot d'aller à une position `(x, y)` avec une orientation `theta`.
 
+<img src="../assets/Terrain_exmaple.png" alt="Terrain d'exemple coordonnées" width="600"/>  
+
 ```python
 client.<couleur><numeros>.goto((x,y,theta), wait=False)
 ```
